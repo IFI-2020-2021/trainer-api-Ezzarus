@@ -39,7 +39,7 @@ class TrainerControllerIntegrationTest {
 
     @Test
     void getAllTrainers_shouldReturnAshAndMisty() {
-        var trainers = this.restTemplate.getForObject("http://localhost:" + port + "/trainers/", Trainer[].class);
+        var trainers = this.restTemplate.getForObject("http://localhost:" + port + "/trainers", Trainer[].class);
         assertNotNull(trainers);
         assertEquals(2, trainers.length);
 

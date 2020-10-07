@@ -59,7 +59,7 @@ class TrainerControllerTest {
         var getMapping = getAllTrainers.getAnnotation(GetMapping.class);
 
         assertNotNull(getMapping);
-        assertArrayEquals(new String[]{"/"}, getMapping.value());
+        assertArrayEquals(new String[]{""}, getMapping.value());
     }
 
     @Test
